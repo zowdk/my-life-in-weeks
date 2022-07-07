@@ -103,5 +103,26 @@ Utility classes
 .container {
   padding-inline: 2em 0;
   margin: 0 auto;
-  max-width: 80rem;
+  /* max-width: 80rem; */
 }
+
+/* todo: row-odd */
+/* todo: row-even */
+
+.hidden {
+  display: none;
+}
+
+/* colors */
+
+/* todo: add color grades using variable in root: 700, 600, 500, 400, 300, 200 */
+
+/* typography */
+
+/* todo: add font-family classes using variables in root */
+
+.uppercasae {
+  text-transform: uppercase;
+}
+
+/* todo: add font sizes using variables in root */
