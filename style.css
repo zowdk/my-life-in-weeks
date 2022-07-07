@@ -1,0 +1,24 @@
+/* ==============
+Custom properties
+=============== */
+
+:root {
+  /* colors */
+  --clr-dark: 230 35% 7%;
+  --clr-light: 195 50% 95%;
+
+  /* todo: color grades: 700, 600, 500, 400, 300, 200  */
+
+  /* font-sizes */
+  --fs-700: 2.25rem;
+  --fs-600: 1rem;
+  --fs-500: 1rem;
+  --fs-400: 0.9375rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+
+  /* font-families */
+  --ff-serif: "Bellefair", serif;
+  --ff-sans-cond: "Barlow Condensed", sans-serif;
+  --ff-sans-normal: "Barlow", sans-serif;
+}
