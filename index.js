@@ -21,8 +21,10 @@ let squares = [];
 // a map of classes (keys) and functions as values
 // for each class/function pair, set the class on the square
 // if the function returns true for fn(i)
+
 const states = {
   "week-spent": (i) => i < 500,
+  "week-open": (i) => !states["week-spent"](i),
 };
 
 //create grid
@@ -36,7 +38,18 @@ function createGrid() {
     grid.appendChild(square);
     //put square in squares array
     squares.push(square);
-    squares[i].classList.add("week-spent");
+
+    // for (let k of Object.keys(states)) {
+    //   if (states[k](i)) {
+    //     square.classList.add(k);
+    //   }
+    // }
+    if (states["week-spent"](i)) {
+      square.classList.add("week-spent");
+    }
+    if (states["week-open"](i)) {
+      square.classList.add("week-open");
+    }
   }
 
   //     if (layout[i] === 0) {
