@@ -131,23 +131,28 @@ Utility classes
 Layout
 =============== */
 
+header,
+footer {
+  margin-block: 2rem;
+}
+
 body {
   max-width: 80vw;
   margin: 0 auto;
 }
 
 .grid {
-  width: 75vw;
+  width: 60vw;
   margin-top: 0.5rem;
-  border: 2px solid #000;
+  border: 1px solid #000;
   display: grid;
   grid-template-columns: repeat(52, 1fr);
   flex-wrap: wrap;
   /* box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75); */
 }
 .grid div {
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 13px;
 }
 
 .week-spent {
