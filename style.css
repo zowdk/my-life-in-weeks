@@ -138,7 +138,6 @@ body {
 
 .grid {
   width: 75vw;
-  /* height: 80vh; */
   margin-top: 0.5rem;
   border: 2px solid #000;
   display: grid;
@@ -155,4 +154,8 @@ body {
   background-color: #000;
   border: 1px solid goldenrod;
   box-sizing: border-box;
+}
+.week-open {
+  background-color: #fff;
+  border: 1px solid #000;
 }
