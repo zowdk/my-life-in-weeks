@@ -22,8 +22,16 @@ let squares = [];
 // for each class/function pair, set the class on the square
 // if the function returns true for fn(i)
 
+//store weeks-spent in a variable
+//create a function that updates weeks-spent based on current date
+
+const startDate = new Date("1990-05-29");
+const currentDate = new Date();
+
+const milisecondsSpent = currentDate.valueOf() - startDate.valueOf();
+
 const states = {
-  "week-spent": (i) => i < 500,
+  "week-spent": (i) => i < 52 * 32,
   "week-open": (i) => !states["week-spent"](i),
 };
 
