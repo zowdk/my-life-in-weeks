@@ -27,8 +27,13 @@ let squares = [];
 
 const startDate = new Date("1990-05-29");
 const currentDate = new Date();
+const hoursPerDay = 24;
+const minutesPerHour = 60;
+const secondsPerMinute = 60;
+const milisecondsPerSecond = 1000;
 
 const milisecondsSpent = currentDate.valueOf() - startDate.valueOf();
+const daysSpent = milisecondsSpent / (24 * 60);
 
 const states = {
   "week-spent": (i) => i < 52 * 32,
