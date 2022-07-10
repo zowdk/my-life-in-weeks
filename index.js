@@ -31,12 +31,19 @@ const hoursPerDay = 24;
 const minutesPerHour = 60;
 const secondsPerMinute = 60;
 const milisecondsPerSecond = 1000;
+const daysPerWeek = 7;
 
 const milisecondsSpent = currentDate.valueOf() - startDate.valueOf();
-const daysSpent = milisecondsSpent / (24 * 60);
+
+//calculate miliseconds per day to convert miliseconds to weeks spent
+const daysSpent =
+  milisecondsSpent /
+  (hoursPerDay * minutesPerHour * secondsPerMinute * milisecondsPerSecond);
+
+const weeksSpent = daysSpent / daysPerWeek;
 
 const states = {
-  "week-spent": (i) => i < 52 * 32,
+  "week-spent": (i) => i < weeksSpent,
   "week-open": (i) => !states["week-spent"](i),
 };
 
