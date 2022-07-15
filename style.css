@@ -115,10 +115,21 @@ Utility classes
 
 /* colors */
 
+.clr-accent {
+  color: goldenrod;
+}
 /* todo: add color grades using variable in root: 700, 600, 500, 400, 300, 200 */
 
 /* typography */
 
+.signature a {
+  text-decoration: none;
+  color: inherit;
+}
+.signature a:focus,
+.signature a:hover {
+  color: goldenrod;
+}
 /* todo: add font-family classes using variables in root */
 
 .uppercasae {
@@ -143,6 +154,7 @@ Layout
 header,
 footer {
   margin-block: 2rem;
+  justify-content: center;
 }
 
 body {
@@ -153,7 +165,7 @@ body {
 .grid {
   max-width: 60vw;
   margin-top: 0.5rem;
-  border: 1px solid #000;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(52, 1fr);
   grid-row-gap: 2px;
@@ -173,6 +185,10 @@ body {
 .week-open {
   background-color: #fff;
   border: 1px solid #000;
+}
+.signature {
+  display: flex;
+  justify-content: right;
 }
 
 /* sidebar widget */
